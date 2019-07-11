@@ -7,8 +7,9 @@ class Complement
   # Other way to do it : 
 
   # def self.of_dna(nucleotide_chain) 
+  #   return '' if nucleotide_chain =~ /[^AGTC]/
   #   dna_array = nucleotide_chain.chars
-  #   rna_array = nucl_array.each_with_object([]) { |char,arr| arr.push rna_translation(char) }
+  #   rna_array = dna_array.each_with_object([]) { |char,arr| arr.push rna_translation(char) }
   #   rna_array.join
   # end
 
